@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+%btn-custom {
+    background-color: #bf2222;
+    color: #fff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 17px;
+
+    &:hover {
+        background-color: #3d2514;
+        color: #fff;
+    }
+
+}
+
+// font-family: 'Alfa Slab One', cursive;
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+header {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+
+    .header-inner {
+        ul.nav {
+            li {
+                padding-left: 50px;
+
+                span {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 17px;
+                    color: #3d2514;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    nav.navbar {
+        padding: 0;
+
+        ul {
+            li {
+                padding-left: 50px;
+
+                a {
+                    background-image: linear-gradient(to right,
+                            #bf2222,
+                            #54b3d6 50%,
+                            #000 50%);
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    display: inline-block;
+                    padding: 5px 0;
+                    position: relative;
+                    letter-spacing: 3px;
+                    font-size: 21px;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                a:before {
+                    content: '';
+                    background: #bf2222;
+                    display: block;
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                a:hover {
+                    background-position: 0;
+                }
+
+                a:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .banner-area {
+        padding: 30px 0;
+
+        .banner-inner {
+            .dashed {
+                font-size: 24px;
+                color: #3d2514;
+                border: 5px dashed #3d2514;
+                padding: 15px;
+                display: inline-block;
+
+            }
+
+            h1 {
+                font-family: 'Alfa Slab One', cursive;
+                font-size: 114px;
+                color: #3d2514;
+                text-transform: uppercase;
+                text-shadow: 4px 3px 0 white;
+            }
+
+            h2 {
+                font-family: 'Alfa Slab One', cursive;
+                font-size: 57px;
+                color: #3d2514;
+                text-transform: uppercase;
+                text-shadow: 4px 3px 0 white;
+            }
+
+            .price-position {
+                position: relative;
+            }
+
+            .price-box {
+                position: absolute;
+                bottom: 0;
+
+                .price-tag {
+                    background-color: #bf2222;
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    position: relative;
+                }
+
+                .price-inner {
+                    background-color: transparent;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    border: 5px dashed #fff;
+                    text-align: center;
+                    font-family: 'Bebas Neue', cursive;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+
+                    .bold {
+                        font-size: 70px;
+                    }
+
+                    span {
+                        font-size: 31px;
+                    }
+
+                    h5 {
+                        font-size: 33px;
+                        letter-spacing: 5px;
+                        transform: translateY(-60%);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// feature section//
+
+.feature-section {
+    padding: 50px 0;
+
+    .feature-inner {
+        color: #fff;
+        position: relative;
+
+        .mb {
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-text {
+            position: absolute;
+            top: 30px;
+            left: 25px;
+
+            h4 {
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 42px;
+            }
+
+            h3.crop {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+// end//
+.repeated-item {
+    color: #3d2514;
+
+    h5 {
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    h2 {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+//cart//
+.cart-section {
+    padding: 35px 0;
+
+    .repeated-item {
+        text-align: center;
+
+        h5 {
+            background-color: #ffc045;
+            padding: 15px 35px;
+            display: inline-block;
+        }
+
+        h2 {
+            padding: 15px 0;
+        }
+
+        p {
+            max-width: 1080px;
+            margin: auto;
+            padding-bottom: 70px;
+        }
+    }
+
+    .cart-inner {
+        img.height {
+            height: 300px;
+        }
+
+        h6 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        a {
+            @extend %btn-custom;
+        }
+    }
+}
+
+// end//
+//slider-section//
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .test-box {
+        position: relative;
+        max-width: 1200px;
+        min-width: 350px;
+        min-height: 250px;
+        padding: 40px 0;
+        overflow: hidden;
+
+
+        .wrapper {
+            width: 300%;
+            /* 300% 'caz we have 3 sliders */
+            min-height: 100%;
+            display: flex;
+            justify-content: space-between;
+            transition: 1s;
+
+            .slider {
+                max-width: 1200px;
+                min-height: 100%;
+                background: #fff;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                margin: 0 10px;
+            }
+
+            .slider-thumb {
+                max-width: 70%;
+                height: 250px;
+                overflow: hidden;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                position: relative;
+            }
+
+            .client-img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 28px;
+            }
+
+            .client-name {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                padding: 5px 20px;
+                background: #fff;
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+
+            .slider-body {
+                width: 65%;
+                min-height: 100%;
+                height: auto;
+                margin-left: 20px;
+                position: relative;
+                padding-bottom: 50px;
+
+
+                .review {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 30px;
+                }
+
+                h3 {
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 30px;
+                    color: #3d3d3d;
+                    text-transform: uppercase;
+                }
+
+                h2 {
+                    font-family: 'Alfa Slab One', cursive;
+                    font-size: 42px;
+                    color: #3d2514;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .indicators {
+            position: absolute;
+            bottom: 59px;
+            left: 6%;
+            color: red;
+        }
+
+        .indicators button {
+            background: none;
+            border: none;
+            outline: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #a0a0a08c;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: .5s;
+        }
+
+        button.active {
+            width: 40px;
+            border-radius: 50px;
+            background: #ffc045;
+        }
+
+    }
+}
+//slider section//
+
+
+.table-form-section{
+    padding-top: 50px;
+    position: relative;
+    .repeated-item{
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    form{
+        padding: 80px 0;
+        position: relative;
+        z-index: 2;
+        .form-control{
+            height: 64px;
+            border: 3px solid #80808042;
+            font-size: 20px;
+        }
+        ::placeholder{
+            font-size: 20px;
+        }
+        a{
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 21px;
+            color: #fff;
+            background-color: #bf2222;
+            padding: 15px 125px;
+            text-transform: uppercase;
+            transition: 0.7s;
+            border: 1px solid #bf2222;
+            &:hover{
+                background-color: #3d2514;
+                color: #fff;
+            }
+        }
+        .pady{
+            padding-bottom: 25px;
+        }
+    }
+    .table-img-position{
+        .item1{
+            position: absolute;
+            right: 0;
+            top: 28%;
+        }
+        .item2{
+            position: absolute;
+            top: 27%;
+            left: 5%;
+        }
+        .item3{
+            position: absolute;
+            top: -10%;
+        }
+    }
+}
+
+
+// footer//
+footer{
+    color: #fff;
+    .container{
+        background: url('../images/footer-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 70px;
+        .footer-inner{
+            padding: 20px 40px 125px 40px;
+            img{
+                padding-bottom: 30px;
+            }
+            ul.nav{
+                li{
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    i{
+                        font-size: 20px;
+                    }
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .footer-last{
+            padding: 0px 40px;
+            .footer-icon{
+                li{
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    a{
+                        color: #fff;
+                        font-size: 25px;
+                        .bi-facebook{
+                            &:hover{
+                                color: #6b6bff;
+                            }
+                        }
+                        .bi-instagram{
+                            &:hover{
+                                color: #ff00cc;
+                            }
+                        }
+                        .bi-twitter{
+                            &:hover{
+                                color: #4646fd;
+                            }
+                        }
+                        .bi-whatsapp{
+                            &:hover{
+                                color: green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

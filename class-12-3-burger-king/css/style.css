@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cart-section .cart-inner a {
+  background-color: #bf2222;
+  color: #fff;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 17px;
+}
+.cart-section .cart-inner a:hover {
+  background-color: #3d2514;
+  color: #fff;
+}
+
+header {
+  background: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  position: relative;
+}
+header .header-inner ul.nav li {
+  padding-left: 50px;
+}
+header .header-inner ul.nav li span {
+  font-size: 40px;
+}
+header .header-inner ul.nav li p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: #3d2514;
+  font-weight: 600;
+}
+header nav.navbar {
+  padding: 0;
+}
+header nav.navbar ul li {
+  padding-left: 50px;
+}
+header nav.navbar ul li a {
+  background-image: linear-gradient(to right, #bf2222, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 21px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav.navbar ul li a:before {
+  content: "";
+  background: #bf2222;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+header nav.navbar ul li a:hover {
+  background-position: 0;
+}
+header nav.navbar ul li a:hover::before {
+  width: 100%;
+}
+header .banner-area {
+  padding: 30px 0;
+}
+header .banner-area .banner-inner .dashed {
+  font-size: 24px;
+  color: #3d2514;
+  border: 5px dashed #3d2514;
+  padding: 15px;
+  display: inline-block;
+}
+header .banner-area .banner-inner h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 114px;
+  color: #3d2514;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 0 white;
+}
+header .banner-area .banner-inner h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 57px;
+  color: #3d2514;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 0 white;
+}
+header .banner-area .banner-inner .price-position {
+  position: relative;
+}
+header .banner-area .banner-inner .price-box {
+  position: absolute;
+  bottom: 0;
+}
+header .banner-area .banner-inner .price-box .price-tag {
+  background-color: #bf2222;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+}
+header .banner-area .banner-inner .price-box .price-inner {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px dashed #fff;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+header .banner-area .banner-inner .price-box .price-inner .bold {
+  font-size: 70px;
+}
+header .banner-area .banner-inner .price-box .price-inner span {
+  font-size: 31px;
+}
+header .banner-area .banner-inner .price-box .price-inner h5 {
+  font-size: 33px;
+  letter-spacing: 5px;
+  transform: translateY(-60%);
+}
+
+.feature-section {
+  padding: 50px 0;
+}
+.feature-section .feature-inner {
+  color: #fff;
+  position: relative;
+}
+.feature-section .feature-inner .mb {
+  margin-bottom: 2.5rem;
+}
+.feature-section .feature-inner .feature-text {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+.feature-section .feature-inner .feature-text h4 {
+  font-size: 25px;
+}
+.feature-section .feature-inner .feature-text h3 {
+  font-size: 42px;
+}
+.feature-section .feature-inner .feature-text h3.crop {
+  max-width: 200px;
+}
+
+.repeated-item {
+  color: #3d2514;
+}
+.repeated-item h5 {
+  font-family: "Bebas Neue", cursive;
+}
+.repeated-item h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.repeated-item p {
+  font-size: 17px;
+}
+
+.cart-section {
+  padding: 35px 0;
+}
+.cart-section .repeated-item {
+  text-align: center;
+}
+.cart-section .repeated-item h5 {
+  background-color: #ffc045;
+  padding: 15px 35px;
+  display: inline-block;
+}
+.cart-section .repeated-item h2 {
+  padding: 15px 0;
+}
+.cart-section .repeated-item p {
+  max-width: 1080px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+.cart-section .cart-inner img.height {
+  height: 300px;
+}
+.cart-section .cart-inner h6 {
+  font-size: 38px;
+}
+.cart-section .cart-inner p {
+  font-size: 17px;
+}
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test .test-box {
+  position: relative;
+  max-width: 1200px;
+  min-width: 350px;
+  min-height: 250px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.test .test-box .wrapper {
+  width: 300%;
+  /* 300% 'caz we have 3 sliders */
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+.test .test-box .wrapper .slider {
+  max-width: 1200px;
+  min-height: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 10px;
+}
+.test .test-box .wrapper .slider-thumb {
+  max-width: 70%;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+.test .test-box .wrapper .client-img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 28px;
+}
+.test .test-box .wrapper .client-name {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 5px 20px;
+  background: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.test .test-box .wrapper .slider-body {
+  width: 65%;
+  min-height: 100%;
+  height: auto;
+  margin-left: 20px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.test .test-box .wrapper .slider-body .review {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.test .test-box .wrapper .slider-body h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+.test .test-box .wrapper .slider-body h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 42px;
+  color: #3d2514;
+  text-transform: uppercase;
+}
+.test .test-box .indicators {
+  position: absolute;
+  bottom: 59px;
+  left: 6%;
+  color: red;
+}
+.test .test-box .indicators button {
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgba(160, 160, 160, 0.5490196078);
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.test .test-box button.active {
+  width: 40px;
+  border-radius: 50px;
+  background: #ffc045;
+}
+
+.table-form-section {
+  padding-top: 50px;
+  position: relative;
+}
+.table-form-section .repeated-item {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.table-form-section form {
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+}
+.table-form-section form .form-control {
+  height: 64px;
+  border: 3px solid rgba(128, 128, 128, 0.2588235294);
+  font-size: 20px;
+}
+.table-form-section form ::-moz-placeholder {
+  font-size: 20px;
+}
+.table-form-section form :-ms-input-placeholder {
+  font-size: 20px;
+}
+.table-form-section form ::placeholder {
+  font-size: 20px;
+}
+.table-form-section form a {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 21px;
+  color: #fff;
+  background-color: #bf2222;
+  padding: 15px 125px;
+  text-transform: uppercase;
+  transition: 0.7s;
+  border: 1px solid #bf2222;
+}
+.table-form-section form a:hover {
+  background-color: #3d2514;
+  color: #fff;
+}
+.table-form-section form .pady {
+  padding-bottom: 25px;
+}
+.table-form-section .table-img-position .item1 {
+  position: absolute;
+  right: 0;
+  top: 28%;
+}
+.table-form-section .table-img-position .item2 {
+  position: absolute;
+  top: 27%;
+  left: 5%;
+}
+.table-form-section .table-img-position .item3 {
+  position: absolute;
+  top: -10%;
+}
+
+footer {
+  color: #fff;
+}
+footer .container {
+  background: url("../images/footer-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+footer .container .footer-inner {
+  padding: 20px 40px 125px 40px;
+}
+footer .container .footer-inner img {
+  padding-bottom: 30px;
+}
+footer .container .footer-inner ul.nav li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+footer .container .footer-inner ul.nav li i {
+  font-size: 20px;
+}
+footer .container .footer-inner ul.nav li span {
+  font-size: 20px;
+}
+footer .container .footer-last {
+  padding: 0px 40px;
+}
+footer .container .footer-last .footer-icon li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+footer .container .footer-last .footer-icon li a {
+  color: #fff;
+  font-size: 25px;
+}
+footer .container .footer-last .footer-icon li a .bi-facebook:hover {
+  color: #6b6bff;
+}
+footer .container .footer-last .footer-icon li a .bi-instagram:hover {
+  color: #ff00cc;
+}
+footer .container .footer-last .footer-icon li a .bi-twitter:hover {
+  color: #4646fd;
+}
+footer .container .footer-last .footer-icon li a .bi-whatsapp:hover {
+  color: green;
+}/*# sourceMappingURL=style.css.map */
